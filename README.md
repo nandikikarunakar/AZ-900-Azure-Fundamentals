@@ -1,23 +1,40 @@
-# Microsoft Azure Fundamentals - AZ-900
+# ☁️ Microsoft Azure Fundamentals - AZ-900
 
-This repository contains my learning notes, concepts, resources, and hands-on practice from **Microsoft Azure Fundamentals (AZ-900)**.
+> My learning journey through **Microsoft Azure Fundamentals (AZ-900)** - covering cloud concepts, Azure services, architecture, security, management, and governance.
 
-The goal of this repository is to document my understanding of fundamental cloud concepts, core Azure services, and Azure management and governance.
-
-## ☁️ Certification
-
-**Microsoft Certified: Azure Fundamentals (AZ-900)**
-
-* Level: Beginner
-* Platform: Microsoft Azure
-* Certification: Microsoft Azure Fundamentals
-* Exam: AZ-900
+![Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge\&logo=microsoftazure\&logoColor=white)
+![AZ-900](https://img.shields.io/badge/AZ--900-Fundamentals-blue?style=for-the-badge)
+![Certification](https://img.shields.io/badge/Certification-Earned-success?style=for-the-badge)
 
 ---
 
-# 📚 AZ-900 Syllabus
+## 🏆 Certification
 
-## 1. Describe Cloud Concepts - 25–30%
+**Microsoft Certified: Azure Fundamentals**
+
+* **Exam:** AZ-900
+* **Level:** Beginner
+* **Technology:** Microsoft Azure
+* **Result:** Passed
+* **Score:** **912 / 1000**
+
+This certification validates foundational knowledge of cloud concepts, core Azure services, and Azure management and governance capabilities.
+
+---
+
+# 📚 What I Learned
+
+The AZ-900 learning journey is organized into three major areas:
+
+| Area                              | Exam Weight |
+| --------------------------------- | ----------: |
+| ☁️ Cloud Concepts                 |      25-30% |
+| 🏗️ Azure Architecture & Services |      35-40% |
+| 🛡️ Azure Management & Governance |      30-35% |
+
+---
+
+# ☁️ 01 - Cloud Concepts
 
 ### Cloud Computing
 
@@ -33,9 +50,9 @@ The goal of this repository is to document my understanding of fundamental cloud
 
 ### Cloud Service Models
 
-* Infrastructure as a Service (IaaS)
-* Platform as a Service (PaaS)
-* Software as a Service (SaaS)
+* **IaaS** - Infrastructure as a Service
+* **PaaS** - Platform as a Service
+* **SaaS** - Software as a Service
 * Shared Responsibility Model
 
 ### Cloud Deployment Models
@@ -44,83 +61,74 @@ The goal of this repository is to document my understanding of fundamental cloud
 * Private Cloud
 * Hybrid Cloud
 
-### Cloud Concepts
+### Cloud Economics
 
 * Consumption-based model
-* Serverless computing
 * Economies of scale
-* Capital expenditure (CapEx)
-* Operational expenditure (OpEx)
+* Capital Expenditure (CapEx)
+* Operational Expenditure (OpEx)
+* Serverless computing
 
 ---
 
-# 🏗️ 2. Describe Azure Architecture and Services - 35–40%
+# 🏗️ 02 - Azure Architecture & Services
 
-## Azure Architecture
+## Azure Physical Infrastructure
 
-### Azure Physical Infrastructure
+* Azure Regions
+* Region Pairs
+* Availability Zones
+* Azure Datacenters
+* Sovereign Regions
 
-* Azure regions
-* Region pairs
-* Sovereign regions
-* Availability zones
-* Azure datacenters
+## Azure Resource Organization
 
-### Azure Resources and Organization
-
-* Azure resources
-* Resource groups
-* Subscriptions
-* Management groups
-* Azure resource hierarchy
-
-**Hierarchy:**
-
+```text
 Management Groups
-↓
+       │
+       ▼
 Subscriptions
-↓
+       │
+       ▼
 Resource Groups
-↓
-Resources
+       │
+       ▼
+Azure Resources
+```
+
+Understanding this hierarchy helped me understand how Azure resources are organized and managed.
 
 ---
 
-## 💻 Azure Compute and Networking
-
-### Compute Services
+## 💻 Compute
 
 * Azure Virtual Machines
 * Virtual Machine Scale Sets
 * Availability Sets
+* Azure App Service
+* Azure Functions
 * Azure Virtual Desktop
 * Containers
-* Azure Functions
-* App Service
-
-### Networking
-
-* Azure Virtual Network (VNet)
-* Subnets
-* VNet peering
-* Azure DNS
-* VPN Gateway
-* ExpressRoute
-* Public endpoints
-* Private endpoints
-
-### Application Hosting
-
-* Virtual machines
-* Web Apps
-* Containers
-* Serverless applications
+* Azure Container Instances
 
 ---
 
-## 💾 Azure Storage
+## 🌐 Networking
 
-### Storage Services
+* Azure Virtual Network (VNet)
+* Subnets
+* VNet Peering
+* Azure DNS
+* VPN Gateway
+* ExpressRoute
+* Public Endpoints
+* Private Endpoints
+
+---
+
+## 💾 Storage
+
+### Azure Storage Services
 
 * Azure Blob Storage
 * Azure Files
@@ -129,11 +137,10 @@ Resources
 
 ### Storage Concepts
 
-* Storage accounts
-* Storage tiers
+* Storage Accounts
+* Storage Tiers
 * Redundancy
 * Replication
-* Data migration
 
 ### Storage Tools
 
@@ -141,58 +148,54 @@ Resources
 * AzCopy
 * Azure File Sync
 
-### Migration Services
+### Data Migration
 
 * Azure Migrate
 * Azure Data Box
 
 ---
 
-## 🔐 Azure Identity, Access and Security
+# 🔐 03 - Identity & Security
 
-### Identity
+## Microsoft Entra ID
 
-* Microsoft Entra ID
-* Microsoft Entra Domain Services
 * Authentication
+* Authorization
 * Single Sign-On (SSO)
 * Multi-Factor Authentication (MFA)
-* Passwordless authentication
-* External identities
+* Passwordless Authentication
+* External Identities
 * Conditional Access
 
-### Access Management
+## Access Control
 
 * Azure Role-Based Access Control (RBAC)
 
-### Security Concepts
+## Security
 
 * Zero Trust
-* Defense in depth
+* Defense in Depth
 * Microsoft Defender for Cloud
 
 ---
 
-# 🛡️ 3. Describe Azure Management and Governance - 30–35%
+# 🛡️ 04 - Management & Governance
 
 ## 💰 Cost Management
 
-* Factors affecting Azure costs
 * Azure Pricing Calculator
 * Azure Cost Management
-* Azure tags
+* Factors affecting Azure costs
+* Tags
 
-## ⚖️ Governance and Compliance
+## ⚖️ Governance & Compliance
 
 * Azure Policy
 * Resource Locks
 * Microsoft Purview
-* Governance concepts
-* Compliance
+* Compliance concepts
 
-## 🚀 Resource Management and Deployment
-
-### Azure Management Tools
+## 🚀 Resource Management
 
 * Azure Portal
 * Azure Cloud Shell
@@ -200,13 +203,17 @@ Resources
 * Azure PowerShell
 * Azure Arc
 
-### Infrastructure as Code
+## Infrastructure as Code
 
 * Infrastructure as Code (IaC)
 * Azure Resource Manager (ARM)
-* ARM templates
+* ARM Templates
 
-## 📊 Monitoring
+---
+
+# 📊 05 - Monitoring
+
+### Azure Monitoring Tools
 
 * Azure Advisor
 * Azure Service Health
@@ -217,23 +224,53 @@ Resources
 
 ---
 
-# 🧪 Hands-on Learning
+# 🧪 Hands-on Practice
 
-The most valuable part of learning Azure is applying the concepts.
+My goal with this repository is not only to document what I studied, but also to demonstrate how I applied the concepts.
 
-My hands-on practice can include:
+Planned hands-on areas:
 
-* Creating Azure resources
-* Working with Resource Groups
-* Exploring Azure Portal
-* Creating storage accounts
-* Deploying compute resources
-* Exploring Azure networking
-* Managing identities and access
-* Using Azure CLI
-* Monitoring Azure resources
-* Exploring Azure Cost Management
-* Applying Azure governance policies
+* [ ] Create and manage Azure Resource Groups
+* [ ] Explore Azure Portal
+* [ ] Create an Azure Storage Account
+* [ ] Work with Blob Storage
+* [ ] Deploy an Azure Function
+* [ ] Explore Azure Virtual Networks
+* [ ] Configure Azure RBAC
+* [ ] Explore Azure Cost Management
+* [ ] Create Azure Policies
+* [ ] Explore Azure Monitor
+
+---
+
+# 🧠 Key Skills
+
+Through AZ-900, I developed foundational knowledge in:
+
+```text
+Cloud Computing
+      │
+      ├── IaaS / PaaS / SaaS
+      ├── Public / Private / Hybrid
+      └── Cloud Economics
+              │
+              ▼
+        Microsoft Azure
+              │
+      ┌───────┼────────┐
+      ▼       ▼        ▼
+   Compute  Network  Storage
+      │       │        │
+      └───────┼────────┘
+              ▼
+        Identity & Security
+              │
+              ▼
+      Management & Governance
+              │
+              ▼
+          Monitoring
+```
 
 ---
 
@@ -241,58 +278,69 @@ My hands-on practice can include:
 
 ### Microsoft Learn
 
-Official Microsoft learning resources for Azure Fundamentals:
+Official learning platform used for Azure fundamentals.
 
-* Microsoft Certified: Azure Fundamentals
-* AZ-900 Study Guide
-* Introduction to Cloud Infrastructure learning paths
-* Azure documentation
-* Microsoft Learn modules
+🔗 [Microsoft Learn](https://learn.microsoft.com/training/)
 
-### Practice
+### AZ-900 Study Guide
 
-* Microsoft Learn Practice Assessment
-* Azure Portal
-* Azure guided projects
-* Azure documentation
+Official Microsoft study guide containing the current exam skills and preparation resources.
 
----
+🔗 [AZ-900 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
 
-# 🎯 Key Learning Outcomes
+### Azure Fundamentals Certification
 
-After completing my AZ-900 learning journey, I developed foundational knowledge of:
+Official Microsoft certification page.
 
-* ☁️ Cloud computing
-* 🏗️ Azure architecture
-* 💻 Azure compute
-* 🌐 Azure networking
-* 💾 Azure storage
-* 🔐 Azure identity and security
-* 🛡️ Azure governance
-* 💰 Azure cost management
-* 📊 Azure monitoring
-* 🚀 Azure resource management
+🔗 [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
 
-This repository represents my foundation for continuing toward more advanced **Azure, AI, Cloud, and DevOps** technologies.
+### Azure Documentation
+
+Official documentation for Azure services and concepts.
+
+🔗 [Microsoft Azure Documentation](https://learn.microsoft.com/azure/)
+
+### Practice Assessment
+
+Microsoft's official practice assessment can be used to evaluate knowledge and identify areas for further preparation.
 
 ---
 
-## 🔗 Official Resources
+# 🚀 What's Next?
 
-Microsoft Certified: Azure Fundamentals
-https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/
+AZ-900 gave me a foundation in cloud and Azure.
 
-AZ-900 Study Guide
-https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
+My next step is to move from **learning concepts → building projects → applying Azure services**.
 
-Microsoft Learn
-https://learn.microsoft.com/training/
-
-Azure Documentation
-https://learn.microsoft.com/azure/
+```text
+AZ-900
+  │
+  ▼
+Azure Fundamentals
+  │
+  ▼
+Hands-on Azure Projects
+  │
+  ▼
+Cloud + AI Development
+  │
+  ▼
+Azure / AI / DevOps
+```
 
 ---
 
 ## 📌 Disclaimer
 
-This repository contains my personal learning notes and hands-on exploration. It is intended for learning and reference purposes and is not a reproduction of Microsoft's exam content.
+This repository contains my personal learning notes, summaries, and hands-on exploration related to Microsoft Azure Fundamentals.
+
+It does not contain Microsoft's proprietary exam questions, dumps, or confidential exam content.
+
+---
+
+## ⭐ Certification Achievement
+
+**Microsoft Certified: Azure Fundamentals (AZ-900)**
+**Score: 912 / 1000**
+
+> Building my foundation in Cloud, Azure, AI, and modern technology — one project at a time.
